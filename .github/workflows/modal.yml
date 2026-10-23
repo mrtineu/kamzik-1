@@ -1,0 +1,43 @@
+name: Run on Modal
+on:
+  workflow_dispatch:
+    inputs:
+      config:
+        description: Experiment configuration
+        type: choice
+        options: [config_generalized.json, config_quick.json, config_optimized.json, config.json]
+        default: config_generalized.json
+      run:
+        description: Run name (reuse only to resume the same configuration)
+        default: modal-generalized
+        required: true
+      mode:
+        description: Start with smoke to check GPU and gradients
+        type: choice
+        options: [smoke, splits, experiment]
+        default: smoke
+permissions:
+  contents: read
+concurrency:
+  group: modal-qwen-reasoning-lab
+  cancel-in-progress: false
+jobs:
+  launch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+      MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+      QRL_CONFIG_INPUT: ${{ inputs.config }}
+      QRL_RUN_INPUT: ${{ inputs.run }}
+      QRL_MODE_INPUT: ${{ inputs.mode }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'modal==1.6.2'
+      - name: Launch detached GPU job
+        run: |
+          test -n "$MODAL_TOKEN_ID" && test -n "$MODAL_TOKEN_SECRET" || { echo 'Add MODAL_TOKEN_ID and MODAL_TOKEN_SECRET repository secrets first'; exit 1; }
+          modal run --detach modal_app.py --config "$QRL_CONFIG_INPUT" --run "$QRL_RUN_INPUT" --mode "$QRL_MODE_INPUT"
