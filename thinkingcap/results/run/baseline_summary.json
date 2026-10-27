@@ -1,0 +1,42 @@
+{
+  "skywork": {
+    "problems": 27946,
+    "eligible": 1418,
+    "samples": 111784,
+    "correct": 5589,
+    "truncated": 80360,
+    "tokens": 400171536,
+    "accuracy": 0.04999821083518214,
+    "mean_tokens": 3579.864166607028
+  },
+  "arc_easy": {
+    "problems": 2051,
+    "eligible": 1791,
+    "samples": 8204,
+    "correct": 6835,
+    "truncated": 15,
+    "tokens": 4236803,
+    "accuracy": 0.833130180399805,
+    "mean_tokens": 516.4313749390541
+  },
+  "gsm8k": {
+    "problems": 7273,
+    "eligible": 3830,
+    "samples": 29092,
+    "correct": 12634,
+    "truncated": 6510,
+    "tokens": 62739742,
+    "accuracy": 0.4342774645950777,
+    "mean_tokens": 2156.597758834044
+  },
+  "commonsense_qa": {
+    "problems": 9541,
+    "eligible": 5862,
+    "samples": 38164,
+    "correct": 21308,
+    "truncated": 0,
+    "tokens": 18849128,
+    "accuracy": 0.5583272193690388,
+    "mean_tokens": 493.89812388638506
+  }
+}

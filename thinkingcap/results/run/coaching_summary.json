@@ -1,0 +1,6 @@
+{
+  "rows": 12901,
+  "usable": 12015,
+  "rows_with_leak_attempt": 1787,
+  "rows_with_malformed_attempt": 0
+}

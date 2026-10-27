@@ -1,0 +1,100 @@
+{
+  "control": {
+    "targets": 9858,
+    "per_source": {
+      "arc_easy": {
+        "eligible": 1791,
+        "any_correct": 1781,
+        "accepted": 1536,
+        "ref_tokens": 682709.0,
+        "target_tokens": 476181,
+        "candidate_correct": 6641,
+        "candidate_samples": 7164,
+        "token_ratio_accepted": 0.6974875093194904,
+        "candidate_accuracy": 0.9269960915689559
+      },
+      "gsm8k": {
+        "eligible": 3830,
+        "any_correct": 3630,
+        "accepted": 2777,
+        "ref_tokens": 3665620.0,
+        "target_tokens": 2269987,
+        "candidate_correct": 9950,
+        "candidate_samples": 15320,
+        "token_ratio_accepted": 0.6192641353986501,
+        "candidate_accuracy": 0.6494778067885117
+      },
+      "commonsense_qa": {
+        "eligible": 5862,
+        "any_correct": 5682,
+        "accepted": 4701,
+        "ref_tokens": 2022836.5,
+        "target_tokens": 1327832,
+        "candidate_correct": 19158,
+        "candidate_samples": 23448,
+        "token_ratio_accepted": 0.6564208229384827,
+        "candidate_accuracy": 0.8170419651995906
+      },
+      "skywork": {
+        "eligible": 1418,
+        "any_correct": 1189,
+        "accepted": 844,
+        "ref_tokens": 1185309.5,
+        "target_tokens": 823646,
+        "candidate_correct": 2710,
+        "candidate_samples": 5672,
+        "token_ratio_accepted": 0.6948784262675698,
+        "candidate_accuracy": 0.47778561354019744
+      }
+    }
+  },
+  "coached": {
+    "targets": 10825,
+    "per_source": {
+      "arc_easy": {
+        "eligible": 1618,
+        "any_correct": 1589,
+        "accepted": 1546,
+        "ref_tokens": 674072.0,
+        "target_tokens": 373684,
+        "candidate_correct": 5677,
+        "candidate_samples": 6472,
+        "token_ratio_accepted": 0.5543680793743102,
+        "candidate_accuracy": 0.8771631644004945
+      },
+      "gsm8k": {
+        "eligible": 3830,
+        "any_correct": 3793,
+        "accepted": 3725,
+        "ref_tokens": 4867428.0,
+        "target_tokens": 1726002,
+        "candidate_correct": 13934,
+        "candidate_samples": 15320,
+        "token_ratio_accepted": 0.3546024717777027,
+        "candidate_accuracy": 0.9095300261096606
+      },
+      "commonsense_qa": {
+        "eligible": 5159,
+        "any_correct": 4681,
+        "accepted": 4277,
+        "ref_tokens": 1800439.0,
+        "target_tokens": 1018684,
+        "candidate_correct": 13194,
+        "candidate_samples": 20636,
+        "token_ratio_accepted": 0.5657975638163804,
+        "candidate_accuracy": 0.6393680945919752
+      },
+      "skywork": {
+        "eligible": 1408,
+        "any_correct": 1344,
+        "accepted": 1277,
+        "ref_tokens": 1840556.5,
+        "target_tokens": 906568,
+        "candidate_correct": 4386,
+        "candidate_samples": 5632,
+        "token_ratio_accepted": 0.49255103008247775,
+        "candidate_accuracy": 0.7787642045454546
+      }
+    }
+  }
+}
