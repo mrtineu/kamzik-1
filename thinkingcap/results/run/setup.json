@@ -1,0 +1,18 @@
+{
+  "prepared_train_rows": 46812,
+  "prepared_train_sha256": "ec42113fbb768a52116a72b56e4f03b1d1269b7dfbf7d2f9559912a8027d093e",
+  "questions_sha256": "16df64e67336b8a1cfa49298cd27e0e1f265927d12ad97f064f3968414d55a86",
+  "overlap_ngram": 13,
+  "overlap_dropped": [
+    "skywork-024078"
+  ],
+  "too_long_dropped": [],
+  "kept": 46811,
+  "kept_per_source": {
+    "skywork": 27946,
+    "arc_easy": 2051,
+    "gsm8k": 7273,
+    "commonsense_qa": 9541
+  },
+  "limit_per_source": null
+}

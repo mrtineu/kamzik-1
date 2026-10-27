@@ -1,0 +1,31 @@
+base       Qwen/Qwen3-0.6B
+candidate  Qwen/Qwen3-0.6B + /__modal/volumes/vo-s6N1Zsy0Lws7G9SGplI0zQ/runs/full/lora_coached/step-00509
+
+bfcl_irrelevance  (240 prompts x 8 samples)
+  tokens saved      +14.9%    CI [+9.9%, +19.6%]
+  accuracy change   -1.46 pp  CI [-3.12 pp, +0.00 pp]
+
+bfcl_multiple  (200 prompts x 8 samples)
+  tokens saved      +10.4%    CI [+7.1%, +13.6%]
+  accuracy change   -3.06 pp  CI [-5.44 pp, -0.69 pp]
+
+bfcl_simple_python  (400 prompts x 8 samples)
+  tokens saved      +11.1%    CI [+8.8%, +13.5%]
+  accuracy change   -1.12 pp  CI [-2.41 pp, +0.16 pp]
+
+ifeval  (541 prompts x 8 samples)
+  tokens saved      +17.6%    CI [+13.8%, +21.3%]
+  accuracy change   -2.13 pp  CI [-3.79 pp, -0.44 pp]
+
+mbpp  (378 prompts x 8 samples)
+  tokens saved       +2.2%    CI [-1.9%, +6.0%]
+  accuracy change   -2.12 pp  CI [-3.70 pp, -0.60 pp]
+
+svamp  (1000 prompts x 8 samples)
+  tokens saved      +30.5%    CI [+28.4%, +32.6%]
+  accuracy change   -1.68 pp  CI [-2.62 pp, -0.71 pp]
+
+average over 4 benchmarks  (bfcl, ifeval, mbpp, svamp)
+  equal weights; tokens saved is a geometric mean; BFCL subsets pooled as one
+  tokens saved      +16.2%    CI [+14.7%, +17.7%]
+  accuracy change   -1.90 pp  CI [-2.57 pp, -1.27 pp]

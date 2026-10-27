@@ -1,0 +1,41 @@
+{"stage": "setup", "seconds": 18.51922035217285}
+{"stage": "baseline", "seconds": 1773.61181640625, "prompts": 2048, "samples": 4, "generated_tokens": 21153263}
+{"stage": "baseline", "seconds": 1809.4973363876343, "prompts": 2048, "samples": 4, "generated_tokens": 21510195}
+{"stage": "baseline", "seconds": 1799.9703464508057, "prompts": 2048, "samples": 4, "generated_tokens": 21534161}
+{"stage": "baseline", "seconds": 1799.0192384719849, "prompts": 2048, "samples": 4, "generated_tokens": 21412607}
+{"stage": "baseline", "seconds": 1727.3499655723572, "prompts": 2048, "samples": 4, "generated_tokens": 20766599}
+{"stage": "baseline", "seconds": 1809.6261985301971, "prompts": 2048, "samples": 4, "generated_tokens": 21508444}
+{"stage": "baseline", "seconds": 1697.566547870636, "prompts": 2048, "samples": 4, "generated_tokens": 20498739}
+{"stage": "baseline", "seconds": 1748.4998264312744, "prompts": 2048, "samples": 4, "generated_tokens": 21071456}
+{"stage": "baseline", "seconds": 1796.1701209545135, "prompts": 2048, "samples": 4, "generated_tokens": 21442172}
+{"stage": "baseline", "seconds": 1814.1861720085144, "prompts": 2048, "samples": 4, "generated_tokens": 21691060}
+{"stage": "baseline", "seconds": 1781.488337278366, "prompts": 2048, "samples": 4, "generated_tokens": 21320201}
+{"stage": "baseline", "seconds": 1792.9846873283386, "prompts": 2048, "samples": 4, "generated_tokens": 21445146}
+{"stage": "baseline", "seconds": 1754.0252928733826, "prompts": 2048, "samples": 4, "generated_tokens": 21165974}
+{"stage": "baseline", "seconds": 1801.3090150356293, "prompts": 2048, "samples": 4, "generated_tokens": 21532236}
+{"stage": "baseline", "seconds": 1807.6231002807617, "prompts": 2048, "samples": 4, "generated_tokens": 21527107}
+{"stage": "baseline", "seconds": 1717.7968289852142, "prompts": 2048, "samples": 4, "generated_tokens": 20712520}
+{"stage": "baseline", "seconds": 1744.9505534172058, "prompts": 2048, "samples": 4, "generated_tokens": 20903843}
+{"stage": "setup", "seconds": 18.879258155822754}
+{"stage": "baseline", "seconds": 1809.9471349716187, "prompts": 2048, "samples": 4, "generated_tokens": 21603201}
+{"stage": "baseline", "seconds": 1726.9639744758606, "prompts": 2048, "samples": 4, "generated_tokens": 20705938}
+{"stage": "baseline", "seconds": 1785.0830080509186, "prompts": 2048, "samples": 4, "generated_tokens": 21345650}
+{"stage": "baseline", "seconds": 1774.053615808487, "prompts": 2048, "samples": 4, "generated_tokens": 21228930}
+{"stage": "baseline", "seconds": 1789.8990859985352, "prompts": 2048, "samples": 4, "generated_tokens": 21385067}
+{"stage": "baseline", "seconds": 1550.6997697353363, "prompts": 1755, "samples": 4, "generated_tokens": 18532700}
+{"stage": "coach", "seconds": 380.7956690788269, "rows": 12901}
+{"stage": "candidates_control", "seconds": 385.74302887916565, "prompts": 2048, "samples": 4, "generated_tokens": 7449678}
+{"stage": "candidates_control", "seconds": 379.066201210022, "prompts": 2048, "samples": 4, "generated_tokens": 7479287}
+{"stage": "candidates_control", "seconds": 386.79100251197815, "prompts": 2048, "samples": 4, "generated_tokens": 7589119}
+{"stage": "candidates_control", "seconds": 392.5704028606415, "prompts": 2048, "samples": 4, "generated_tokens": 7691442}
+{"stage": "candidates_control", "seconds": 375.70273184776306, "prompts": 2048, "samples": 4, "generated_tokens": 7441414}
+{"stage": "candidates_control", "seconds": 356.1139295101166, "prompts": 2048, "samples": 4, "generated_tokens": 7150104}
+{"stage": "candidates_control", "seconds": 126.89232873916626, "prompts": 613, "samples": 4, "generated_tokens": 2334784}
+{"stage": "candidates_coached", "seconds": 235.46949076652527, "prompts": 2048, "samples": 4, "generated_tokens": 4940838}
+{"stage": "candidates_coached", "seconds": 242.85179376602173, "prompts": 2048, "samples": 4, "generated_tokens": 5052783}
+{"stage": "candidates_coached", "seconds": 251.8187975883484, "prompts": 2048, "samples": 4, "generated_tokens": 5205502}
+{"stage": "candidates_coached", "seconds": 254.80052781105042, "prompts": 2048, "samples": 4, "generated_tokens": 5205420}
+{"stage": "candidates_coached", "seconds": 241.0757601261139, "prompts": 2048, "samples": 4, "generated_tokens": 5001959}
+{"stage": "candidates_coached", "seconds": 223.71097779273987, "prompts": 1775, "samples": 4, "generated_tokens": 4506136}
+{"stage": "train_control", "seconds": 594.9758455753326, "steps": 618}
+{"stage": "train_coached", "seconds": 512.8333044052124, "steps": 678}
