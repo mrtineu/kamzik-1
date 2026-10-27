@@ -17,6 +17,12 @@ QRL_CONFIG=config_optimized.json QRL_RUN=optimized .venv/bin/python -u experimen
 
 See [the first completed results](FIRST_RESULTS.md). The larger run continues under `runs/pilot/`.
 
+**Newest results (2026-10-24):** the full-data run scored on
+[ThinkingCap-Test](https://github.com/BottleCapAI/ThinkingCap-Test) is in [thinkingcap/](thinkingcap/README.md).
+The best adapter (`thinkingcap/results/adapters/coached/step-00170`) uses 22.5% fewer thinking tokens
+for -1.58 pp accuracy; without the teacher's coaching, training saves only 0-2%. Full tables:
+[thinkingcap/results/RESULTS.md](thinkingcap/results/RESULTS.md).
+
 A local pilot of **teacher-coached reasoning compression** in Qwen3-0.6B using an inter-layer residual MLP. Created 2026-10-18. This is independent of the Slovak train-delay project.
 
 ## Where the space goes
