@@ -1,0 +1,14 @@
+{
+  "targets": "targets_coached.jsonl",
+  "arms": {
+    "mlp-mid": {"kind": "mlp", "layers": [13], "bottleneck": 64, "learning_rate": 0.0003},
+    "mlp-quarters": {"kind": "mlp", "layers": [6, 13, 20, 27], "bottleneck": 64, "learning_rate": 0.0003},
+    "extra-block": {"kind": "block", "after": 13, "learning_rate": 0.0002},
+    "extra-mlp": {"kind": "block", "after": 13, "train": "mlp", "learning_rate": 0.0002},
+    "extra-mlp-64": {"kind": "block", "after": 13, "train": "mlp", "mlp_width": 64, "learning_rate": 0.0003},
+    "extra-mlp-64-l17": {"kind": "block", "after": 17, "train": "mlp", "mlp_width": 64, "learning_rate": 0.0003,
+                         "stop_after": 170},
+    "extra-mlp-64-l20": {"kind": "block", "after": 20, "train": "mlp", "mlp_width": 64, "learning_rate": 0.0003,
+                         "stop_after": 170}
+  }
+}

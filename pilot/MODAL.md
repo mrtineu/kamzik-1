@@ -36,8 +36,8 @@ Use a separate small client environment; the laptop's ROCm installation is unuse
 uv venv .modal-venv --python 3.12
 uv pip install --python .modal-venv/bin/python 'modal==1.6.2'
 .modal-venv/bin/modal setup
-.modal-venv/bin/modal run --detach modal_app.py --mode smoke
-.modal-venv/bin/modal run --detach modal_app.py \
+.modal-venv/bin/modal run --detach pilot/modal_app.py --mode smoke
+.modal-venv/bin/modal run --detach pilot/modal_app.py \
   --config config_generalized.json --run modal-generalized --mode experiment
 ```
 

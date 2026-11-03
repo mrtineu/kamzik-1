@@ -40,4 +40,4 @@ jobs:
       - name: Launch detached GPU job
         run: |
           test -n "$MODAL_TOKEN_ID" && test -n "$MODAL_TOKEN_SECRET" || { echo 'Add MODAL_TOKEN_ID and MODAL_TOKEN_SECRET repository secrets first'; exit 1; }
-          modal run --detach modal_app.py --config "$QRL_CONFIG_INPUT" --run "$QRL_RUN_INPUT" --mode "$QRL_MODE_INPUT"
+          modal run --detach pilot/modal_app.py --config "$QRL_CONFIG_INPUT" --run "$QRL_RUN_INPUT" --mode "$QRL_MODE_INPUT"

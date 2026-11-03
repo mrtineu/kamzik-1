@@ -1,0 +1,31 @@
+base       Qwen/Qwen3-0.6B
+candidate  Qwen/Qwen3-0.6B
+
+bfcl_irrelevance  (240 prompts x 8 samples)
+  tokens saved       -0.8%    CI [-2.7%, +1.3%]
+  accuracy change   +0.21 pp  CI [-0.10 pp, +0.52 pp]
+
+bfcl_multiple  (200 prompts x 8 samples)
+  tokens saved       +0.3%    CI [-0.4%, +1.1%]
+  accuracy change   +0.00 pp  CI [-0.44 pp, +0.44 pp]
+
+bfcl_simple_python  (400 prompts x 8 samples)
+  tokens saved       -0.4%    CI [-0.8%, -0.1%]
+  accuracy change   -0.06 pp  CI [-0.25 pp, +0.09 pp]
+
+ifeval  (541 prompts x 8 samples)
+  tokens saved       +0.5%    CI [-0.6%, +1.7%]
+  accuracy change   +0.12 pp  CI [-0.25 pp, +0.49 pp]
+
+mbpp  (378 prompts x 8 samples)
+  tokens saved       -0.2%    CI [-1.3%, +0.7%]
+  accuracy change   +0.07 pp  CI [-0.30 pp, +0.43 pp]
+
+svamp  (1000 prompts x 8 samples)
+  tokens saved       -0.1%    CI [-1.0%, +0.7%]
+  accuracy change   -0.24 pp  CI [-0.50 pp, +0.04 pp]
+
+average over 4 benchmarks  (bfcl, ifeval, mbpp, svamp)
+  equal weights; tokens saved is a geometric mean; BFCL subsets pooled as one
+  tokens saved       -0.1%    CI [-0.5%, +0.4%]
+  accuracy change   -0.01 pp  CI [-0.16 pp, +0.14 pp]

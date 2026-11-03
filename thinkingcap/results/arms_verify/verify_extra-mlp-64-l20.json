@@ -1,0 +1,14 @@
+{
+  "hf_vs_vllm_base": 0.020749980583786964,
+  "arms": {
+    "extra-mlp-64-l20": {
+      "identity": true,
+      "roundtrip": true,
+      "roundtrip_max_abs_logit": 0.0,
+      "perturbation_effect": 0.13545776903629303,
+      "vllm_vs_hf_perturbed": 0.02254342846572399,
+      "vllm": true,
+      "vllm_identity_vs_vllm_base": 0.012856927700340748
+    }
+  }
+}
