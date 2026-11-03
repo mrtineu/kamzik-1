@@ -1,0 +1,37 @@
+base       Qwen/Qwen3-0.6B
+candidate  /vol/runs/full/arms/extra-mlp-64-l17/step-00170/model
+
+bfcl_irrelevance  (240 prompts x 8 samples)
+  tokens saved      +27.5%    CI [+23.3%, +31.6%]
+  accuracy change   +1.09 pp  CI [-0.05 pp, +2.29 pp]
+
+bfcl_multiple  (200 prompts x 8 samples)
+  tokens saved      +19.7%    CI [+16.6%, +23.0%]
+  accuracy change   -4.56 pp  CI [-6.62 pp, -2.56 pp]
+
+bfcl_simple_python  (400 prompts x 8 samples)
+  tokens saved      +17.5%    CI [+15.1%, +19.8%]
+  accuracy change   -0.88 pp  CI [-2.25 pp, +0.47 pp]
+
+ifeval  (541 prompts x 8 samples)
+  tokens saved      +17.1%    CI [+13.3%, +20.4%]
+  accuracy change   -0.69 pp  CI [-2.20 pp, +0.81 pp]
+
+mbpp  (378 prompts x 8 samples)
+  tokens saved       +7.1%    CI [+3.1%, +11.0%]
+  accuracy change   -1.92 pp  CI [-3.44 pp, -0.46 pp]
+
+svamp  (1000 prompts x 8 samples)
+  tokens saved      +38.9%    CI [+37.2%, +40.5%]
+  accuracy change   -2.75 pp  CI [-3.65 pp, -1.77 pp]
+
+average over 4 benchmarks  (bfcl, ifeval, mbpp, svamp)
+  equal weights; tokens saved is a geometric mean; BFCL subsets pooled as one
+  tokens saved      +21.9%    CI [+20.5%, +23.3%]
+  accuracy change   -1.64 pp  CI [-2.27 pp, -1.02 pp]
+
+
+
+These runs referenced their weights differently, one by Hub id and one
+by local path. That alone shifts generation, so some of the difference
+below is loading rather than training. Score both the same way.

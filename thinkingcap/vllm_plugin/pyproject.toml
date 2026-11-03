@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thinkingcap-vllm"
+version = "0.1.0"
+description = "vLLM plugin for the ThinkingCap ReasoningMLP arms"
+requires-python = ">=3.10"
+
+[project.entry-points."vllm.general_plugins"]
+thinkingcap_reasoning_mlp = "thinkingcap_vllm:register"
+
+[tool.setuptools]
+packages = ["thinkingcap_vllm"]

@@ -1,0 +1,32 @@
+{
+  "hf_vs_vllm_base": 0.020749980583786964,
+  "arms": {
+    "mlp-mid": {
+      "identity": true,
+      "roundtrip": true,
+      "roundtrip_max_abs_logit": 0.0,
+      "perturbation_effect": 0.14837968349456787,
+      "vllm_vs_hf_perturbed": 0.02386534959077835,
+      "vllm": true,
+      "vllm_identity_vs_vllm_base": 3.847107166166097e-07
+    },
+    "mlp-quarters": {
+      "identity": true,
+      "roundtrip": true,
+      "roundtrip_max_abs_logit": 0.0,
+      "perturbation_effect": 0.2610148787498474,
+      "vllm_vs_hf_perturbed": 0.024505818262696266,
+      "vllm": true,
+      "vllm_identity_vs_vllm_base": 3.847107166166097e-07
+    },
+    "extra-block": {
+      "identity": true,
+      "roundtrip": true,
+      "roundtrip_max_abs_logit": 0.0,
+      "perturbation_effect": 0.11892984807491302,
+      "vllm_vs_hf_perturbed": 0.021963516250252724,
+      "vllm": true,
+      "vllm_identity_vs_vllm_base": 0.01504107378423214
+    }
+  }
+}
