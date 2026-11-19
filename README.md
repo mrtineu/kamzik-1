@@ -1,8 +1,24 @@
-# Qwen reasoning lab
+# Kamzik-1
 
-The goal is to make Qwen3-0.6B **think in fewer tokens at the same accuracy**. Raising accuracy is not a goal.
-The model learns from a Qwen3-8B teacher that coaches it to be brief, and is scored by
-[ThinkingCap-Test](https://github.com/BottleCapAI/ThinkingCap-Test) @ `bd52d8d`, run unmodified.
+**Kamzik-1 is Qwen3-0.6B taught to think in fewer tokens.** It is the base model plus one small trained MLP inserted
+after layer 13, and it uses **28.7% fewer generated tokens for −1.71 pp of accuracy**. It is still a plain 29-layer
+Qwen3 checkpoint that loads without custom code.
+
+*Kamzík is a hill near Bratislava, and the Slovak word for chamois, the mountain goat.*
+
+| | Qwen3-0.6B | Kamzik-1 |
+|---|---:|---:|
+| Trained parameters | – | 197,632 |
+| Generated tokens | baseline | **28.7% fewer** |
+| Accuracy change | – | −1.71 pp |
+
+Kamzik-1 learns from a Qwen3-8B teacher that coaches it to be brief, with no hints at inference time. It is scored by
+[ThinkingCap-Test](https://github.com/BottleCapAI/ThinkingCap-Test) @ `bd52d8d`, run unmodified. The goal was to
+**think in fewer tokens at the same accuracy**, and raising accuracy was never a goal. Kamzik-1 does not reach "same
+accuracy": see the [summary](#summary) and the [caveats](#caveats-and-open-issues).
+
+Kamzik-1 is the `extra-mlp-64` arm after layer 13 at step 170 (definitions below). The weights are not in git (about
+50 MB per checkpoint); they are on the `thinkingcap` Modal volume (see the caveats).
 
 - `thinkingcap/` holds the pipeline, the arms and the side experiments, all run on a Modal H100.
   [thinkingcap/README.md](thinkingcap/README.md) covers how to run it.
@@ -13,7 +29,7 @@ The model learns from a Qwen3-8B teacher that coaches it to be brief, and is sco
 | Question | Answer |
 |---|---|
 | Does any configuration keep accuracy equal? | **No.** Every trained configuration loses accuracy, and every accuracy CI excludes 0. The loss stays around −1.6 pp whatever the architecture. |
-| Best trade-off you can submit | **extra-mlp-64 after layer 13, step 170**: 28.7% fewer generated tokens for −1.71 pp. It is a plain 29-layer Qwen3 checkpoint. |
+| Best trade-off you can submit (**Kamzik-1**) | **extra-mlp-64 after layer 13, step 170**: 28.7% fewer generated tokens for −1.71 pp. It is a plain 29-layer Qwen3 checkpoint. |
 | Does the teacher matter? | **Yes.** The same training without coaching (the control arm) saves 0–2%. |
 | Which architecture? | The best checkpoint of every adapter loses about 0.06–0.08 pp per 1% of tokens saved. Architecture changes how far along that line a run goes, not the line itself. |
 | Where should it go? | Placing it later compresses less. After layer 20 it saves 19.5% for −1.11 pp. That is the smallest loss measured, but its CI overlaps the others. |
